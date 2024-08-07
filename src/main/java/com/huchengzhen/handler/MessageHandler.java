@@ -1,9 +1,8 @@
 package com.huchengzhen.handler;
 
 import com.huchengzhen.Context;
-import com.huchengzhen.message.Message;
+import com.huchengzhen.message.sub.response.GeneralResponse;
 import com.huchengzhen.message.MessageHeader;
-import com.huchengzhen.message.Response;
 import com.huchengzhen.message.sub.PositionMessage;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandler;
@@ -55,24 +54,10 @@ public class MessageHandler extends SimpleChannelInboundHandler<ByteBuf> {
         }
 
         Context context = MessageHandler.NUMBER_TO_CONTEXT.get(numberString);
-
-        if (context != null && context.getChannel().get().isActive()) {
-            Response response = new Response();
-            response.setId(context.getId().get());
-            response.setSequenceNumber(context.getRequestSequenceNumber().get());
-            response.setResult((byte) 0);
-
-            Message message = new Message();
-            MessageHeader responseHeader = new MessageHeader();
-            responseHeader.setId(0x8001);
-            responseHeader.setNumber(context.getNumber());
-            responseHeader.setProperty(context.getProperty());
-            // 递增
-            responseHeader.setSequenceNumber(context.getSequenceNumber());
-
-            message.setHeader(responseHeader);
-            message.setBody(response);
-            context.getChannel().get().writeAndFlush(message);
-        }
+        GeneralResponse generalResponse = new GeneralResponse();
+        generalResponse.setId(context.getId().get());
+        generalResponse.setSequenceNumber(context.getRequestSequenceNumber().get());
+        generalResponse.setResult((byte) 0);
+        context.send(generalResponse);
     }
 }

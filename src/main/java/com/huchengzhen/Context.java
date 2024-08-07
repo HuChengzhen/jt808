@@ -1,6 +1,9 @@
 package com.huchengzhen;
 
+import com.huchengzhen.message.Message;
 import com.huchengzhen.message.MessageBodyProperty;
+import com.huchengzhen.message.MessageHeader;
+import com.huchengzhen.message.Response;
 import io.netty.channel.Channel;
 import lombok.Getter;
 import lombok.ToString;
@@ -29,5 +32,21 @@ public class Context {
 
     public int getSequenceNumber() {
         return sequenceNumber.getAndIncrement();
+    }
+
+    public void send(Response response) {
+        if (!getChannel().get().isActive()) {
+            return;
+        }
+        Message message = new Message();
+        MessageHeader responseHeader = new MessageHeader();
+        responseHeader.setId(response.geMessageId());
+        responseHeader.setNumber(this.getNumber());
+        responseHeader.setProperty(this.getProperty());
+        responseHeader.setSequenceNumber(this.getSequenceNumber());
+
+        message.setHeader(responseHeader);
+        message.setBody(response);
+        this.getChannel().get().writeAndFlush(message);
     }
 }

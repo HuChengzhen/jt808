@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0313bf-79cf-41c6-b624-d730f204ff25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/EWSN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageEscapeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageValidateHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageWrapEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/MessageBodyProperty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/MessageHeader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/ToByteBuf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/sub/PositionMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/BCD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/EscapeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/RemoveUnActiveChannelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/ValidCodeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/GeneralResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/ToByteBuf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/RemoveUnActiveChannelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/RemoveUnActiveChannelUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +45,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,7 +67,7 @@
       <module name="hcz_jt808" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.huchengzhen.message.*" />
+          <option name="PATTERN" value="com.huchengzhen.message.sub.response.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723032636499</updated>
-      <workItem from="1723032637587" duration="20455000" />
+      <workItem from="1723032637587" duration="21252000" />
     </task>
     <servers />
   </component>

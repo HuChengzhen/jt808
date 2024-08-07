@@ -1,20 +1,9 @@
 package com.huchengzhen.message;
 
 import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
-import lombok.Data;
 
-@Data
-public class Response implements ToByteBuf {
-    private int sequenceNumber;
-    private int id;
-    private byte result;
+public interface Response {
+    int geMessageId();
 
-    public ByteBuf toByteBuf() {
-        ByteBuf buffer = Unpooled.buffer();
-        buffer.writeShort(sequenceNumber);
-        buffer.writeShort(id);
-        buffer.writeByte(result);
-        return buffer;
-    }
+    ByteBuf toByteBuf();
 }

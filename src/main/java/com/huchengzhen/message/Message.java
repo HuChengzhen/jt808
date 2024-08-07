@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class Message {
     private MessageHeader header;
-    private ToByteBuf body;
+    private Response body;
 
     public ByteBuf toByteBuf() {
         ByteBuf beforeEscape = Unpooled.buffer();
