@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c0313bf-79cf-41c6-b624-d730f204ff25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/GeneralResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/handler/MessageHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/message/ToByteBuf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/RemoveUnActiveChannelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/util/RemoveUnActiveChannelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/huchengzhen/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723032636499</updated>
-      <workItem from="1723032637587" duration="21252000" />
+      <workItem from="1723032637587" duration="21544000" />
     </task>
     <servers />
   </component>

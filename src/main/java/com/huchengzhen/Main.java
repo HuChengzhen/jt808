@@ -28,7 +28,7 @@ public class Main {
                         @Override
                         public void initChannel(SocketChannel ch) {
                             ChannelPipeline pipeline = ch.pipeline();
-                            pipeline.addLast(new DelimiterBasedFrameDecoder(99999, true, Unpooled.wrappedBuffer(new byte[]{Constant.IDENTIFICATION_BIT})));
+                            pipeline.addLast(new DelimiterBasedFrameDecoder(99999, true, Unpooled.copiedBuffer(new byte[]{Constant.IDENTIFICATION_BIT})));
                             pipeline.addLast(new MessageValidateHandler());
                             pipeline.addLast(MessageHandler.instance);
                             pipeline.addLast(new MessageWrapEncoder());
